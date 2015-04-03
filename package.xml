@@ -1,0 +1,28 @@
+<package>
+  <name>prosilica_gige_sdk</name>
+  <version>1.0.0</version>
+  <description>test</description>
+  <maintainer email="test@gmail.com">Allied Vision Technologies. ROS package maintained by William Woodall - wwoodall@willowgarage.com.</maintainer>
+
+  <license>Commercial</license>
+
+  <url type="website">http://www.ros.org/wiki/prosilica_gige_sdk</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Allied Vision Technologies. ROS package maintained by William Woodall - wwoodall@willowgarage.com.</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+
+  <!-- Dependencies needed after this package is compiled. -->
+
+  <!-- Dependencies needed only for running tests. -->
+
+<export>
+    <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lPvAPI" cflags="-I${prefix}/include"/>
+    <doxymaker external="http://www.alliedvisiontec.com/us/products/software/avt-pvapi-sdk.html"/>
+</export>
+
+</package>
